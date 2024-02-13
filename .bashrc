@@ -119,7 +119,7 @@ nameC="${bldgrn}"
 hostC="${bldcyn}"
 pathC="${bldylw}"
 gitbranchC="${bldcyn}"
-pointerC="${txtrst}"
+pointerC="${bldgrn}"
 normalC="${txtrst}"
 lineC="${bldblu}"
 

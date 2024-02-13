@@ -17,6 +17,8 @@ alias follow="tail -f -n +1"
 alias pro="cd /home/$USER/Projects"
 alias ii3="vim ~/.config/i3/config"
 alias pydir="cd /home/$USER/Programming/Python3"
-# [END] #
+alias :~="cd ~/"
+alias sp="cd /home/$USER/Scripts"
+#[END] #
 
 

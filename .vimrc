@@ -28,14 +28,18 @@ syntax on
 " Add numbers to the file.
 set number
 
-" Set shift width to 4 spaces.
+" Set tab width to 4 spaces
+set tabstop=4
 set shiftwidth=4
+set expandtab
 
-" Visual prompt for command completion
+" Customize command line appearance
 set wildmenu
+set showcmd
 
 " Enable mouse support
 set mouse=a
+set gcr=a:blinkon0
 
 let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 
@@ -48,6 +52,8 @@ set encoding=utf-8
 " History
 set history=50
 
+" Highlight search results
+set hlsearch
 
 " Display
 set ls=2
@@ -58,6 +64,9 @@ set ruler
 set title
 set nu
 
+" Enable vertical and horizontal scroll bars
+set guioptions+=b
+set guioptions+=B
 
 " PLUGINS ---------------------------------------------------------------- {{{
 call plug#begin()
@@ -80,3 +89,6 @@ nnoremap <silent> <Up> gk
 nnoremap <silent> <Down> gj
 inoremap <silent> <Up> <Esc>gka
 inoremap <silent> <Down> <Esc>gja
+inoremap jj <esc>
+nnoremap <space> :
+
