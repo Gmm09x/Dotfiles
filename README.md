@@ -9,4 +9,4 @@ To use these dotfiles, follow these simple steps:
 git clone https://github.com/Gmm09x/Dotfiles.git && bash Dotfiles/install.sh    
 ```
 # Contributing
-### Contributions are welcome! If you have any suggestions, bug reports, or enhancements, please feel free to open an issue or submit a pull request.
+* Contributions are welcome! If you have any suggestions, bug reports, or enhancements, please feel free to open an issue or submit a pull request.
