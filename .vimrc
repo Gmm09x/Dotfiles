@@ -79,16 +79,15 @@ Plug 'dense-analysis/ale'
 
 call plug#end()
 
+" Disable arrow keys
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
 
+" Same more keybinds
 nnoremap <leader>so :SO<Space>
-
-" Direction keys for wrapped lines
-nnoremap <silent> k gk
-nnoremap <silent> j gj
-nnoremap <silent> <Up> gk
-nnoremap <silent> <Down> gj
-inoremap <silent> <Up> <Esc>gka
-inoremap <silent> <Down> <Esc>gja
 inoremap jj <esc>
 nnoremap <space> :
+
 
