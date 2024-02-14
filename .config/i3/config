@@ -21,20 +21,12 @@ font pango:DejaVu Sans Mono 8
 
 for_window [class="^.*"] border pixel 1
 
-# Start XDG autostart .desktop files using dex. See also
-# https://wiki.archlinux.org/index.php/XDG_Autostart
-exec --no-startup-id dex --autostart --environment i3
+# Set default border style and width
+default_border pixel 1
 
-# The combination of xss-lock, nm-applet and pactl is a popular choice, so
-# they are included here as an example. Modify as you see fit.
-
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+# Enable gaps between windows
+gaps inner 10 
+gaps outer 2
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -183,19 +175,14 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-# bar {
-# 	position bottom
-#	status_command i3status -c /home/gourav/.config/i3/i3status.conf 
-# }
-
-
-# Execute .desktop files using dex.
-# Keep in mind that it can cause issues when second to 13 a DE is installed
-# or mixed usage of 13 + xfce4 or GNOME. In this case, it's better to disable dex
-# and use manual starting apps using xdg/autostart.
+# Autostart applicationsi
 exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart/
-exec --no-startup-id nitrogen --restore
+exec --no-startup-id dex --autostart --environment i3
+exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
-	
+exec --no-startup-id volumeicon
+exec --no-startup-id udiskie --tray
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id nitrogen --restore
+exec_always --no-startup-id polybar& 
+exec --no-startup-id picom --config ~/.config/picom/picom.conf
