@@ -55,6 +55,9 @@ set history=50
 " Highlight search results
 set hlsearch
 
+" Set the color scheme.
+colorscheme Dark-Slate
+
 " Display
 set ls=2
 set showmode
@@ -89,5 +92,4 @@ noremap <Right> <Nop>
 nnoremap <leader>so :SO<Space>
 inoremap jj <esc>
 nnoremap <space> :
-
 

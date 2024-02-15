@@ -77,7 +77,7 @@ fi
 parse_git_branch() {
     local branch_name=$(git branch 2> /dev/null | sed -n '/\* /s///p')
     if [ ! -z "$branch_name" ]; then
-        echo " branch=> $branch_name "
+        echo "  => $branch_name "
     fi
 }
 
@@ -135,7 +135,7 @@ lineC="${bldblu}"
 function bash_prompt(){
 #     PS1="${nameC}\u${atC}@${hostC}\h${colonC}:${pathC}\w${gitbranchC}\$(git_branch)${pointerC}▶ ${normalC}"
 #     PS1="$(echo -e "\[\033[38;5;33m\]$(whoami)@\h \[\033[38;5;208m\]$(parse_git_branch)\[\033[38;5;15m\] \w\n\[\033[38;5;244m\]❯ \[\033[0m\]")'
-    PS1="${nameC}\u${atC}${pathC}\w${gitbranchC}\$(parse_git_branch)${pointerC}▶ ${normalC}"
+    PS1="󰍹 ${nameC}\u${atC}${pathC}  \w${gitbranchC}\$(parse_git_branch)${pointerC}▶ ${normalC}"
 
 }
 

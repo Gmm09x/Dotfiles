@@ -1,9 +1,9 @@
 # [START] #
-
+alias vi="vim"
+alias ls=lsd
 alias grep='grep --color=auto'
 alias gg='git grep -ni'
 alias phpunit='phpunit --colors'
-alias vimpress="VIMENV=talk vim"
 alias c="composer"
 alias v="vagrant"
 alias d="sudo docker"
