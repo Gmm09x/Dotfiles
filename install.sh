@@ -3,6 +3,13 @@
 
 PATH="/home/$USER"
 
+
+same_install() {
+
+    sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get install polybar -y
+}
+
+
 remove_readme() {
     # Remove README.md file if exists
     rm -rf README.md
@@ -19,6 +26,7 @@ move_remaining_files() {
 }
 
 main() {
+    same_install
     remove_readme
     copy_hidden_files
     move_remaining_files
