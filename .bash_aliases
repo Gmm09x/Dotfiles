@@ -1,4 +1,5 @@
 # [START] #
+alias :c="clear"
 alias vi="vim"
 alias ls=lsd
 alias grep='grep --color=auto'
@@ -16,9 +17,40 @@ alias j="jobs"
 alias follow="tail -f -n +1"
 alias pro="cd /home/$USER/Projects"
 alias ii3="vim ~/.config/i3/config"
-alias pydir="cd /home/$USER/Programming/Python3"
+alias py="cd /home/$USER/Programming"
 alias :~="cd ~/"
 alias sp="cd /home/$USER/Scripts"
+
+
+
+# git aliases
+alias g="git"
+alias gst="git status"
+alias gc="git commit"
+alias ga="git add"
+alias gpl="git pull"
+alias gpom="git pull origin master"
+alias gpu="git push"
+alias gpuom="git push origin master"
+alias gd="git diff"
+alias gch="git checkout"
+alias gnb="git checkout -b"
+alias gac="git add . && git commit"
+alias grs="git restore --staged ."
+alias gre="git restore"
+alias gr="git remote"
+alias gcl="git clone"
+alias gt="git ls-tree -r master --name-only"
+alias grm="git remote"
+alias gb="git branch"
+alias gf="git fetch"
+
+
+
+
+
+
+
 #[END] #
 
 
