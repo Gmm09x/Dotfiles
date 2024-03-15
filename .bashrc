@@ -42,8 +42,8 @@ HISTFILESIZE=2000000
 
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    alias dir='dir --color=auto'
+    # alias ls='ls --color=auto'
+    # alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
@@ -69,17 +69,10 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 # Define a function to get the git branch name
-# parse_git_branch() {
-#     git branch 2> /dev/null | sed -n '/\* /s///p'
-# }
-
-# Define a function to get the git branch name
 parse_git_branch() {
-    local branch_name=$(git branch 2> /dev/null | sed -n '/\* /s///p')
-    if [ ! -z "$branch_name" ]; then
-        echo "  => $branch_name "
-    fi
+    git branch 2> /dev/null | sed -n '/\* /s///p'
 }
+
 
 # Colours have names too. Stolen from Arch wiki
 
@@ -119,23 +112,21 @@ txtrst='\[\e[0m\]'    # Text Reset
 
 # Prompt colours
 
-atC="${bldpur}"
-colonC="${bldwht}"
-nameC="${bldgrn}"
-hostC="${bldcyn}"
-pathC="${bldylw}"
-gitbranchC="${bldcyn}"
-pointerC="${bldgrn}"
-normalC="${txtrst}"
+atC="${bldblu}"
+colonC="${bldblk}"
+nameC="${bldblu}"
+hostC="${bldblu}"
+pathC="${bldblk}"
+gitbranchC="${bldblk}"
+pointerC="${bldblk}"
+normalC="${txtwht}"
 lineC="${bldblu}"
 
 
 # Custom prompt
 
 function bash_prompt(){
-#     PS1="${nameC}\u${atC}@${hostC}\h${colonC}:${pathC}\w${gitbranchC}\$(git_branch)${pointerC}▶ ${normalC}"
-#     PS1="$(echo -e "\[\033[38;5;33m\]$(whoami)@\h \[\033[38;5;208m\]$(parse_git_branch)\[\033[38;5;15m\] \w\n\[\033[38;5;244m\]❯ \[\033[0m\]")'
-    PS1="󰍹 ${nameC}\u${atC}${pathC}  \w${gitbranchC}\$(parse_git_branch)${pointerC}▶ ${normalC}"
+    PS1="${nameC}\u${atC}@${hostC}\h${colonC}:${pathC}\w${gitbranchC}\$(parse_git_branch)${pointerC}$ ${normalC}"
 
 }
 

@@ -25,7 +25,7 @@ for_window [class="^.*"] border pixel 1
 default_border pixel 1
 
 # Enable gaps between windows
-gaps inner 10 
+gaps inner 5 
 gaps outer 1
 
 # Use pactl to adjust volume in PulseAudio.
@@ -51,7 +51,7 @@ bindsym $mod+Shift+f exec thunar
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-# bindsym $mod+d exec --no-startup-id dmenu_run
+# bindsym $mod+d exec --no-startup-id xfce4-appfinder
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -108,16 +108,16 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 
-set $ws1 "1: TERM"
-set $ws2 "2: DEV"
-set $ws3 "3: WEB"
-set $ws4 "4: FILE"
-set $ws5 "5: MEDIA"
-set $ws6 "6: DOC"
-set $ws7 "7: CHAT"
-set $ws8 "8: MUSIC"
-set $ws9 "9: VM"
-set $ws10 "10: EXTRA"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -182,9 +182,6 @@ exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
-exec --no-startup-id volumeicon
-exec --no-startup-id udiskie --tray
-exec --no-startup-id xfce4-power-manager
 exec --no-startup-id nitrogen --restore
 exec_always --no-startup-id polybar& 
 exec --no-startup-id picom --config ~/.config/picom/picom.conf

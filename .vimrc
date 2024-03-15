@@ -27,6 +27,8 @@ syntax on
 
 " Add numbers to the file.
 set number
+" Show relative line numbers
+set relativenumber
 
 " Set tab width to 4 spaces
 set tabstop=4
@@ -36,6 +38,9 @@ set expandtab
 " Customize command line appearance
 set wildmenu
 set showcmd
+
+" Use System Clipboard
+set clipboard=unnamedplus
 
 " Enable mouse support
 set mouse=a
@@ -56,7 +61,7 @@ set history=50
 set hlsearch
 
 " Set the color scheme.
-colorscheme Dark-Slate
+colorscheme default
 
 " Display
 set ls=2
@@ -67,17 +72,16 @@ set ruler
 set title
 set nu
 
-" Enable vertical and horizontal scroll bars
-set guioptions+=b
-set guioptions+=B
+" Turn off the GUI features if you're running in a terminal
+if !has('gui_running')
+    set termguicolors
+endif
 
 " PLUGINS ---------------------------------------------------------------- {{{
 call plug#begin()
 
-Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'tmsvg/pear-tree'
 Plug 'dense-analysis/ale'
 
 call plug#end()
