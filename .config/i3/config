@@ -25,8 +25,8 @@ for_window [class="^.*"] border pixel 1
 default_border pixel 1
 
 # Enable gaps between windows
-gaps inner 5 
-gaps outer 1
+gaps inner 3 
+gaps outer 2
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -50,8 +50,10 @@ bindsym $mod+Shift+f exec thunar
 # kill focused window
 bindsym $mod+Shift+q kill
 
+bindsym $mod+Shift+end exec xfce4-session-logout
+
 # start dmenu (a program launcher)
-# bindsym $mod+d exec --no-startup-id xfce4-appfinder
+bindsym $mod+d exec --no-startup-id xfce4-appfinder
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -177,11 +179,26 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Media volume controls with PulseAudio commands
+bindsym $mod+Ctrl+Up   exec --no-startup-id pactl set-sink-volume 0 +5%  # Increase volume
+bindsym $mod+Ctrl+Down exec --no-startup-id pactl set-sink-volume 0 -5%  # Decrease volume
+bindsym $mod+Ctrl+Right exec --no-startup-id pactl set-sink-mute 0 toggle  # Mute
+
+# OR (For ALSA systems, replace pactl commands with amixer commands)
+# bindsym $mod+Ctrl+Up   exec --no-startup-id amixer sset 'Master' 5%+  # Increase volume
+# bindsym $mod+Ctrl+Down exec --no-startup-id amixer sset 'Master' 5%-  # Decrease volume
+# bindsym $mod+Ctrl+Right exec --no-startup-id amixer sset 'Master' toggle  # Mute
+
 # Autostart applicationsi
 exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id nitrogen --restore
-exec_always --no-startup-id polybar& 
-exec --no-startup-id picom --config ~/.config/picom/picom.conf
+# exec_always --no-startup-id polybar& 
+exec_always --no-startup-id killall xfce4-panel&
+# exec --no-startup-id picom --config ~/.config/picom/picom.conf
+exec_always --no-startup-id bash ~/.config/polybar/polybar.sh
+exec_always --no-startup-id picom --experimental-backends --config ~/.config/picom/picom.conf
+
+# exec --no-startup-id i3-msg exec /usr/bin/code

@@ -1,0 +1,644 @@
+{
+	"folder_history":
+	[
+		"/home/gourav/Programming"
+	],
+	"last_version": 3211,
+	"last_window_id": 16,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 952.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"w",
+						"w"
+					],
+					[
+						"dataa",
+						"dataa"
+					],
+					[
+						"n",
+						"n"
+					],
+					[
+						"f",
+						"file"
+					],
+					[
+						"da",
+						"data"
+					],
+					[
+						"daa",
+						"dataa"
+					],
+					[
+						"M",
+						"MAIN_NUMBER"
+					],
+					[
+						"m",
+						"main_number"
+					],
+					[
+						"R",
+						"Random_numbers"
+					],
+					[
+						"N",
+						"MAIN_NUMBER"
+					],
+					[
+						"o",
+						"output"
+					],
+					[
+						"d",
+						"DATA"
+					],
+					[
+						"st",
+						"stdio.h\tstandard header"
+					],
+					[
+						"add_items",
+						"add_items"
+					],
+					[
+						"input",
+						"input"
+					],
+					[
+						"Item",
+						"Items"
+					],
+					[
+						"C",
+						"Count"
+					],
+					[
+						"U",
+						"User_Input"
+					],
+					[
+						"co",
+						"Command"
+					],
+					[
+						"hel",
+						"help_main_page"
+					],
+					[
+						"c",
+						"Count"
+					],
+					[
+						"i",
+						"item"
+					],
+					[
+						"s",
+						"stdio.h\tstandard header"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/C++/C Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C Single File.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/C++/C Single File.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/Python/Python.sublime-build",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Packages/Python/Python.sublime-build",
+						""
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"View: Toggle Menu",
+						"View: Toggle Menu"
+					],
+					[
+						"",
+						"Code Folding: Unfold All"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 186.0,
+				"history":
+				[
+					"exit",
+					"python3",
+					"ls"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/gourav/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+				"/home/gourav/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/home/gourav/Programming/Python3/dd.py",
+				"/home/gourav/Programming/Python3/main4.py",
+				"/home/gourav/Programming/C-language/main.c",
+				"/home/gourav/.config/polybar/scripts/logout_applet.sh",
+				"/home/gourav/.local/share/applications/logout_applet.desktop",
+				"/home/gourav/Documents/ME/NIOS.txt",
+				"/home/gourav/Programming/Python3/main.py",
+				"/home/gourav/Programming/Python3/main",
+				"/home/gourav/Programming/Python3/Number_Guessing_Game/main.py",
+				"/home/gourav/Programming/Python3/new.py",
+				"/main3.y",
+				"/home/gourav/src/github.com/Gmm09x/Random-Project/.git/config",
+				"/home/gourav/Programming/Python3/shooping.py",
+				"/home/gourav/Programming/Python3/untitled"
+			],
+			"find":
+			{
+				"height": 37.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 37.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 127.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"replace":
+			{
+				"height": 70.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": false,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 152.0,
+			"status_bar_visible": false,
+			"template_settings":
+			{
+			}
+		},
+		"new_window_width": 1318.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"N",
+						"New_Build"
+					],
+					[
+						"U",
+						"USER"
+					],
+					[
+						"w",
+						"w"
+					],
+					[
+						"dataa",
+						"dataa"
+					],
+					[
+						"n",
+						"n"
+					],
+					[
+						"f",
+						"file"
+					],
+					[
+						"da",
+						"data"
+					],
+					[
+						"daa",
+						"dataa"
+					],
+					[
+						"M",
+						"MAIN_NUMBER"
+					],
+					[
+						"m",
+						"main_number"
+					],
+					[
+						"R",
+						"Random_numbers"
+					],
+					[
+						"o",
+						"output"
+					],
+					[
+						"d",
+						"DATA"
+					],
+					[
+						"st",
+						"stdio.h\tstandard header"
+					],
+					[
+						"add_items",
+						"add_items"
+					],
+					[
+						"input",
+						"input"
+					],
+					[
+						"Item",
+						"Items"
+					],
+					[
+						"C",
+						"Count"
+					],
+					[
+						"co",
+						"Command"
+					],
+					[
+						"hel",
+						"help_main_page"
+					],
+					[
+						"c",
+						"Count"
+					],
+					[
+						"i",
+						"item"
+					],
+					[
+						"s",
+						"stdio.h\tstandard header"
+					]
+				]
+			},
+			"buffers":
+			[
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/C++/C Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C Single File.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/C++/C Single File.sublime-build",
+						""
+					]
+				],
+				[
+					[
+						[
+							"Packages/Python/Python.sublime-build",
+							""
+						],
+						[
+							"Packages/Python/Python.sublime-build",
+							"Syntax Check"
+						]
+					],
+					[
+						"Packages/Python/Python.sublime-build",
+						""
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"View: Toggle Menu",
+						"View: Toggle Menu"
+					],
+					[
+						"",
+						"Code Folding: Unfold All"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 186.0,
+				"history":
+				[
+					"exit",
+					"python3",
+					"ls"
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/gourav/src/github.com/Gmm09x/VertexLinux/untitled",
+				"/home/gourav/src/github.com/Gmm09x/VertexLinux/README.md",
+				"/home/gourav/src/github.com/Gmm09x/VertexLinux/.gitignore",
+				"/home/gourav/.bash_aliases",
+				"/home/gourav/src/github.com/Gmm09x/VertexLinux/git.sh",
+				"/home/gourav/.bash_A",
+				"/home/gourav/src/github.com/Gmm09x/VertexLinux/setup",
+				"/home/gourav/Projects/VertexLinux/setup",
+				"/home/gourav/src/github.com/Gmm09x/VertexLinux/Assets/VertexLinux.jpeglogo.txt",
+				"/home/gourav/Projects/VertexLinux/src/update/source_updater",
+				"/opt/sublime_text/sublime.py",
+				"/opt/sublime_text/sublime",
+				"/home/gourav/main.",
+				"/home/gourav/Programming/Python3/main.py",
+				"/home/gourav/Documents/ME/NIOS.txt",
+				"/home/gourav/src/github.com/Gmm09x/MY-LINUX/builder.sh",
+				"/home/gourav/Projects/debian-live-config/Makefile",
+				"/home/gourav/Programming/Python3/Dotfiles_Maker/main.py",
+				"/home/gourav/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+				"/home/gourav/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+				"/home/gourav/.config/sublime-text-3/Packages/User/Plain text.sublime-settings",
+				"/home/gourav/Programming/Python3/dd.py",
+				"/home/gourav/Programming/Python3/main4.py",
+				"/home/gourav/Programming/C-language/main.c",
+				"/home/gourav/.config/polybar/scripts/logout_applet.sh",
+				"/home/gourav/.local/share/applications/logout_applet.desktop",
+				"/home/gourav/Programming/Python3/main",
+				"/home/gourav/Programming/Python3/Number_Guessing_Game/main.py",
+				"/home/gourav/Programming/Python3/new.py",
+				"/main3.y",
+				"/home/gourav/src/github.com/Gmm09x/Random-Project/.git/config",
+				"/home/gourav/Programming/Python3/shooping.py",
+				"/home/gourav/Programming/Python3/untitled"
+			],
+			"find":
+			{
+				"height": 31.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"\nclass Sheet(object):\n    def __init__(self, id):\n        self.sheet_id = id\n\n    def __eq__(self, other):\n        return isinstance(other, Sheet) and other.sheet_id == self.sheet_id\n\n    def id(self):\n        return self.sheet_id\n\n    def window(self):\n        window_id = sublime_api.sheet_window(self.sheet_id)\n        if window_id == 0:\n            return None"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"sheets":
+					[
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 31.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 127.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,0,0,0,0,667,5,1325,959,1332,999",
+			"project": "",
+			"replace":
+			{
+				"height": 58.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": false,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 152.0,
+			"status_bar_visible": false,
+			"template_settings":
+			{
+			},
+			"window_id": 16,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}
