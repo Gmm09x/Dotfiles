@@ -1,7 +1,6 @@
 # [START] #
 
 
-alias :c="clear"
 alias vi="vim"
 alias gmm="cd ~/src/github.com/Gmm09x"
 alias :q="exit"

@@ -1,3 +1,5 @@
 #!/bin/bash
-xfce4-session-logout --logout
+
+
+xfce4-session-logout 
 
