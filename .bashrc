@@ -1,4 +1,4 @@
-
+ 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -133,12 +133,33 @@ lineC="${bldblu}"
 
 # Custom prompt
 
-function bash_prompt(){
+function main_prompt(){
 #     PS1="${nameC}\u${atC}@${hostC}\h${colonC}:${pathC}\w${gitbranchC}\$(git_branch)${pointerC}▶ ${normalC}"
 #     PS1="$(echo -e "\[\033[38;5;33m\]$(whoami)@\h \[\033[38;5;208m\]$(parse_git_branch)\[\033[38;5;15m\] \w\n\[\033[38;5;244m\]❯ \[\033[0m\]")'
-    PS1="󰍹 ${nameC}\u${atC}${pathC}  \w${gitbranchC}\$(parse_git_branch)${pointerC}▶ ${normalC}"
+    PS1="󰍹 ${nameC}\u${atC}${pathC}  \w${gitbranchC}\$(parse_git_branch)${pointerC}\n$ ${normalC}"
 
 }
 
-bash_prompt
+function lprompt(){
+	if [ "$color_prompt" = yes ]; then
+	    PS1="\[\033[0;31m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;37m\]\342\234\227\[\033[0;31m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]root\[\033[01;33m\]@\[\033[01;96m\]\h'; else echo '\[\033[0;39m\]\u\[\033[01;33m\]@\[\033[01;96m\]\h'; fi)\[\033[0;31m\]]\342\224\200[\[\033[0;32m\]\w\[\033[0;31m\]]\n\[\033[0;31m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]\[\e[01;33m\]\\$ \[\e[0m\]"
+	else
+	    PS1='┌──[\u@\h]─[\w]\n└──╼ \$ '
+	fi
+	
+	# If this is an xterm set the title to user@host:dir
+	case "$TERM" in
+	xterm*|rxvt*)
+	    PS1="\[\033[0;31m\]\342\224\214\342\224\200\$([[ \$? != 0 ]] && echo \"[\[\033[0;31m\]\342\234\227\[\033[0;31m\]]\342\224\200\")[$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]root\[\033[01;33m\]@\[\033[01;96m\]\h'; else echo '\[\033[0;39m\]\u\[\033[01;33m\]@\[\033[01;96m\]\h'; fi)\[\033[0;31m\]]\342\224\200[\[\033[0;32m\]\w\[\033[0;31m\]]\n\[\033[0;31m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]\[\e[01;33m\]\\$ \[\e[0m\]"
+	    ;;
+	*)
+	    ;;
+	esac
+	
+}
+
+
+
+
+main_prompt
 
